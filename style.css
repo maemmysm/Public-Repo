@@ -331,6 +331,59 @@ code {
     flex-wrap: wrap;
 }
 
+.common-ground {
+    background: linear-gradient(135deg, #2c3e66, #b76e79);
+    border-radius: 2rem;
+    padding: 2rem 1.8rem;
+    margin-bottom: 2.5rem;
+    color: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.common-ground h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.4rem;
+    text-align: center;
+}
+
+.common-ground .common-subhead {
+    text-align: center;
+    font-size: 0.95rem;
+    opacity: 0.9;
+    margin-bottom: 1.5rem;
+}
+
+.common-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+}
+
+.common-item {
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 1.5rem;
+    padding: 1.1rem 1rem;
+    text-align: center;
+    backdrop-filter: blur(2px);
+    transition: transform 0.2s, background 0.2s;
+}
+
+.common-item:hover {
+    transform: translateY(-4px);
+    background: rgba(255,255,255,0.2);
+}
+
+.common-item .common-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.common-item .common-text {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
 /* responsive tweaks */
 @media (max-width: 700px) {
     body {
